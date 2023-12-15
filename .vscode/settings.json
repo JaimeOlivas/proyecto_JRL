@@ -14,5 +14,10 @@
     "idf.portWin": "COM6",
     "idf.pythonBinPathWin": "C:\\Users\\PROPIETARIO\\esp\\espressif_vs\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe",
     "idf.toolsPathWin": "C:\\Users\\PROPIETARIO\\esp\\espressif_vs",
-    "idf.flashType": "UART"
+    "idf.flashType": "UART",
+    "files.associations": {
+        "header.h": "c",
+        "gpio.h": "c",
+        "gpioconfig.h": "c"
+    }
 }

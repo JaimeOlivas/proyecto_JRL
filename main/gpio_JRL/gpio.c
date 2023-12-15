@@ -36,8 +36,8 @@ void gpio_pinMode(uint8_t pin, uint8_t mode){
 
         if(IO_MUX_OFS[pin] != 0x00){
            volatile uint32_t * const OE_REG = (volatile uint32_t * const)(IO_MUX_BASE_ADDR  + IO_MUX_OFS[pin] ); 
-           *OE_REG &= ~0X01;    // SE DESHABILITA EL BIT DE INPUT ENABLE
-           *OE_REG |= (1<<9);  //HABILITA EL BIT DE OUTPUT ENABLE
+           *OE_REG &= ~0X01;    // SE DESHABILITA EL BIT DE OUTPUT ENABLE
+           *OE_REG |= (1<<9);  //HABILITA EL BIT DE INPUIT ENABLE
 
         }
        if(IO_MUX_OFS[pin] != 0x00){                                                                                     // hay algunos pines que no cuentan con resistencias de pull up a los cuales en el offset se les puso 0x00
